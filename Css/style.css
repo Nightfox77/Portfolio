@@ -23,6 +23,9 @@ h2,h3 {
 h2 span {
     color: var(--crl--grey);
 }
+h2 {
+    text-shadow: 30px var(--crl--neonpink);
+}
 .striketrough {
     text-decoration: line-through;
     text-decoration-color: var(--crl--white);
@@ -40,6 +43,10 @@ h3 {
 .text {
     color: var(--crl--white);
     font-family: var(--text);
+}
+.noline {
+    color: #FF10F0;
+    text-decoration: none;
 }
 body {
     background-color: var(--crl--black);
@@ -120,7 +127,7 @@ nav {
     display: grid;
     grid-auto-flow: row;
     padding: 20px;
-    background-color: var(--crl--black);
+    
 }
 .logo {
     display: grid;
@@ -241,6 +248,7 @@ nav {
 }
 .hero img {
     max-width: 300px;
+    min-width: 200px;
 }
 .card img {
     max-width: 100%;
@@ -265,30 +273,62 @@ nav {
     width: 100%;
     gap: 70px;
     text-align: center;
-    
+    margin-top: 50px;
 }
-.links {
+.links-contact{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 80px;
 }
-.links img {
+.copyright {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+}
+.textwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    text-align: left;
+    margin: 0;
+}
+.links-contact img, .links-portfolio img {
     width: 40px;
 }
-.links img:hover, .up img:hover {
+.links-portfolio img:hover, .links-contactimg, .up img:hover {
     transform: scale(115%);
+}
+.welcome.about {
+    display: grid;
+    place-content: center;
+    
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+.aboutwrapper {
+    text-align: left;
+    gap: 50px;
+}
+
+.imageContainer-about img {
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    
+}
+.imageContainer-about {
+    background-color: var(--crl--neonteal);
 }
 footer {
     display: grid;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    height: 100%;
-    margin-top: 100px;
+    place-items: center;
+    height: 100vh;
+    
 }
 .up {
-    display: flex;
-    justify-content: right;
+    justify-self: right;
 }
   
