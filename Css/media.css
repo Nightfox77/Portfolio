@@ -1,0 +1,54 @@
+@media screen and (min-width: 800px) {
+    .neon-text:hover {
+        color: var(--crl--black);
+        background-color: var(--crl--neonteal);
+        box-shadow: 0 0 3.5em var(--crl--neonteal);
+    }
+    .neon-text.green:hover {
+        background-color: var(--crl--neongreen);
+        box-shadow: 0 0 3.5em var(--crl--neongreen);
+    }
+    .neon-text.neon-text.pink:hover {
+        color: var(--crl--neonpink);
+        background-color: transparent;
+        box-shadow: 0 0 3.5em var(--crl--neonpink);
+    }
+    .imageContainer:not(.hero) {
+        filter: grayscale(100%);
+    }
+    .card:hover .imageContainer {
+        filter: none;
+    }
+    .links {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+}
+@media screen and (min-width: 1000px) {
+    main {
+        margin: 0 auto;
+        width: 1000px;
+    }
+    .welcome {
+        flex-direction: row;
+    }
+    .top {
+        flex-direction: row;
+    }
+    .icons {
+        display: none;
+    }
+    .menu {
+        flex-direction: row;
+        width: 100%;
+        gap: 20px;
+        justify-content: end;
+        animation: none;
+        transform: translateX(0);
+        margin: 0 auto;
+    }
+    .portfolio {
+        height: 100vh;
+    }
+}
