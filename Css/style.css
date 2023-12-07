@@ -286,13 +286,7 @@ nav {
     grid-auto-flow: column;
     place-items: center;
 }
-.textwrapper {
-    display: flex;
-    flex-direction: column;
-    justify-self: left;
-    text-align: left;
-    margin: 0;
-}
+
 .links-contact img, .links-portfolio img {
     width: 40px;
 }
@@ -302,21 +296,22 @@ nav {
 .welcome.about {
     display: grid;
     place-content: center;
-    
-    text-align: center;
+    justify-items: center;
+    grid-auto-rows: max-content;
     height: 100vh;
     margin: 0;
 }
 .aboutwrapper {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
     gap: 50px;
+    width: 100%;
+    align-self: center;
 }
-
 .imageContainer-about img {
     width: 200px;
     border-radius: 50%;
     height: 200px;
-    
 }
 .imageContainer-about {
     background-color: var(--crl--neonteal);
@@ -326,7 +321,6 @@ footer {
     flex-direction: column;
     place-items: center;
     height: 100vh;
-    
 }
 .up {
     justify-self: right;
