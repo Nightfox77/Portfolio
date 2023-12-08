@@ -85,8 +85,8 @@ window.addEventListener('scroll', function hideReflection() {
   function flickerAnimation(element) {
     function flicker() {
       element.style.opacity = 0;
-      setTimeout(() => { element.style.opacity = 1; }, Math.random() * 60); // Random delay for reappearing (up to 100ms)
-      setTimeout(flicker, Math.random() * 5000); // Random delay before next flicker (up to 300ms)
+      setTimeout(() => { element.style.opacity = 1; }, Math.random() * 60); // Random delay for reappearing (up to 60ms)
+      setTimeout(() => { randomFlicker(); }, Math.random() * 5000); // Random delay before next flicker (up to 10 seconds)
     }
 
     flicker();
@@ -95,18 +95,11 @@ window.addEventListener('scroll', function hideReflection() {
   function randomFlicker() {
     const buttons = document.querySelectorAll('.neon-text');
     const randomIndex = Math.floor(Math.random() * buttons.length);
-    buttons.forEach((button, index) => {
-      if (index === randomIndex) {
-        flickerAnimation(button);
-      }
-    });
+    flickerAnimation(buttons[randomIndex]);
   }
 
   // Initial random flicker
   randomFlicker();
-
-  // Set interval to change flicker every few seconds for one button at a time
-  setInterval(randomFlicker, 7000); // Change every 5 seconds
   
   
   

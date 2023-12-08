@@ -37,6 +37,12 @@
         display: flex;
         flex-direction: row;
     }
+    .hero::before {
+        top: 200px;
+        left: 100px;
+        right: 0;
+        bottom: 0;
+    }
     .top {
         flex-direction: row;
     }
