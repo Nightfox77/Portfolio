@@ -26,9 +26,12 @@
     }
 }
 @media screen and (min-width: 1000px) {
-    main {
+    main,footer {
         margin: 0 auto;
         width: 1000px;
+    }
+    .welcome {
+        height: 60vh;
     }
     .welcome, .aboutwrapper {
         display: flex;
@@ -42,6 +45,7 @@
     }
     .menu {
         flex-direction: row;
+        display: flex;
         width: 100%;
         gap: 20px;
         justify-content: end;
