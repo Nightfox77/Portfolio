@@ -297,7 +297,6 @@ nav {
     grid-auto-flow: column;
     place-items: center;
 }
-
 .links-contact img, .links-portfolio img {
     width: 40px;
 }
@@ -324,9 +323,6 @@ nav {
     height: 300px;
     border-radius: 50%;
     filter: grayscale(100%);
-}
-.imageContainer-about {
-    background-color: var(--crl--neonteal);
 }
 footer {
     display: grid;
