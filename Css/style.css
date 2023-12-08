@@ -323,6 +323,7 @@ nav {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    filter: grayscale(100%);
 }
 .imageContainer-about {
     background-color: var(--crl--neonteal);
