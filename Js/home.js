@@ -98,7 +98,7 @@ window.addEventListener('scroll', function hideReflection() {
     flickerAnimation(buttons[randomIndex]);
   }
 
-  // Initial random flicker
+ 
   randomFlicker();
   
   
