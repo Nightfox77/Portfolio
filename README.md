@@ -4,13 +4,13 @@
 
 
 ## Description
-
+A one-pager to present me, the work I`ve done and links to the different sites and 
+Github repositories. The overall style of the Site is neon lights. I added a flicker effect on the buttons
+and made sure they flicker independently and irregularly. The cards show an image of each project I made, a short
+description, and a link to the live site and the repository. 
 
 
 ## Built With
-
-You can list a the tech stack that you've used over here
-
 - Html
 - CSS
 - Javascript
