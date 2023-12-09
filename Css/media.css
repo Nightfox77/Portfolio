@@ -31,7 +31,8 @@
         width: 1000px;
     }
     .welcome {
-        height: 60vh;
+        height: 100vh;
+        margin: 0;
     }
     .welcome, .aboutwrapper {
         display: flex;
@@ -59,7 +60,5 @@
         transform: translateX(0);
         margin: 0 auto;
     }
-    .portfolio {
-        height: 100vh;
-    }
+    
 }
