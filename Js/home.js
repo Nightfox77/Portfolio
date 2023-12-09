@@ -85,8 +85,8 @@ window.addEventListener('scroll', function hideReflection() {
   function flickerAnimation(element) {
     function flicker() {
       element.style.opacity = 0;
-      setTimeout(() => { element.style.opacity = 1; }, Math.random() * 60); // Random delay for reappearing (up to 60ms)
-      setTimeout(() => { randomFlicker(); }, Math.random() * 5000); // Random delay before next flicker (up to 10 seconds)
+      setTimeout(() => { element.style.opacity = 1; }, Math.random() * 80); // Random delay for reappearing (up to 60ms)
+      setTimeout(() => { randomFlicker(); }, Math.random() * 3000); // Random delay before next flicker (up to 10 seconds)
     }
 
     flicker();
