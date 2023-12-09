@@ -41,6 +41,7 @@
     .hero::before {
         top: 200px;
         left: 100px;
+        top: 400px;
         right: 0;
         bottom: 0;
     }
