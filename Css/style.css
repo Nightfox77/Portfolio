@@ -54,6 +54,7 @@ body {
     margin: 20px;
     box-sizing: border-box;
 }
+/* buttons */
 .neon-text {
     font-size: .75em;
     font-family: var(--heading);
@@ -98,6 +99,7 @@ body {
     box-shadow: 0 0 .8em var(--crl--neonpink),
                 inset 0 0 0.5em var(--crl--neonpink);
 }
+/* header */
 header {
     z-index: 5;
     position: fixed;
@@ -163,6 +165,7 @@ nav {
 #xIcon {
     display: none;
 }
+/* welcome section */
 .welcome {
     margin-top: 200px;
     height: 100%;
@@ -176,6 +179,7 @@ nav {
     max-width: 500px;
     margin: 0 auto;
 }
+/* portfolio section */
 .portfolio {
     display: grid;
     height: 100%;
@@ -278,31 +282,14 @@ nav {
     margin: 0;
     padding: 0 5px;
 }
-#contact {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 70px;
-    text-align: center;
-    margin-top: 50px;
-}
-.links-contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-}
-.copyright {
-    display: grid;
-    grid-auto-flow: column;
-    place-items: center;
-}
+
 .links-contact img, .links-portfolio img {
     width: 40px;
 }
-.links-portfolio img:hover, .links-contactimg, .up img:hover {
+.links-portfolio img:hover, .links-contact img:hover, .up img:hover {
     transform: scale(115%);
 }
+/* about section */
 .welcome.about {
     display: grid;
     place-content: center;
@@ -324,10 +311,30 @@ nav {
     border-radius: 50%;
     filter: grayscale(100%);
 }
+/* fotter section */
 footer {
     display: grid;
     flex-direction: column;
     place-items: center;
     height: 100vh;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 70px;
+    text-align: center;
+    margin-top: 50px;
+}
+.links-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+.copyright {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
 }
   

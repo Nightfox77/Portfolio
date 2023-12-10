@@ -5,6 +5,7 @@ const closeIcon = document.querySelector("#xIcon");
 const neon = document.querySelectorAll(".menu .neon-text");
 const topContainer = document.querySelector(".top");
 
+/* when neon button clicked => check screensize => show or not show menu */
 neon.forEach(function(element) {
   element.addEventListener('click', checkScreen);
 });
@@ -16,7 +17,7 @@ function checkScreen() {
     menu.style.display = "flex";
   }
 }
-
+/* what happens when menu is shown in mobile */
 function showMenu() {
   topContainer.style.flexDirection = "column";
   overlay.style.transform = "translateX(0)";
@@ -25,7 +26,7 @@ function showMenu() {
   burger.style.display = "none";
   closeIcon.style.display = "block";
 }
-
+/* what happens to hide menu */
 function hideMenu() {
   topContainer.style.flexDirection = "row";
   overlay.style.transform = "translateX(-100%)";
@@ -49,7 +50,7 @@ window.addEventListener('resize', handleScreenSize);
 
 
 
-
+/* scroll back to top function for home and up button */
 const home = document.querySelector("#homeButton");
 const up = document.querySelector("#upButton")
 function scrollToTop(event) {
@@ -63,14 +64,11 @@ function scrollToTop(event) {
 home.onclick = scrollToTop;
 up.onclick = scrollToTop;
 
-
+/* hide reflection of buttons in top as soon as scrolling starts */
 window.addEventListener('scroll', function hideReflection() {
   if (window.matchMedia('(min-width: 1000px)').matches) {
     
-  
-  
-  
-  if (window.scrollY > 0) {
+    if (window.scrollY > 0) {
     neon.forEach(function(element) {
     element.classList.add('no');
   })
@@ -81,7 +79,7 @@ window.addEventListener('scroll', function hideReflection() {
   }
   }
   })
-
+/* flicker animation for the buttons */
   function flickerAnimation(element) {
     function flicker() {
       element.style.opacity = 0;
@@ -91,7 +89,7 @@ window.addEventListener('scroll', function hideReflection() {
 
     flicker();
   }
-
+/* function for random button selection */
   function randomFlicker() {
     const buttons = document.querySelectorAll('.neon-text');
     const randomIndex = Math.floor(Math.random() * buttons.length);
