@@ -309,7 +309,7 @@ nav {
     justify-items: center;
     grid-auto-rows: max-content;
     height: 100vh;
-    margin: 0;
+    margin-top: 50px;
 }
 .aboutwrapper {
     display: flex;
