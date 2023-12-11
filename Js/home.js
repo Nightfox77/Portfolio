@@ -64,20 +64,20 @@ home.onclick = scrollToTop;
 up.onclick = scrollToTop;
 
 /* hide reflection of buttons in top as soon as scrolling starts */
-// window.addEventListener('scroll', function hideReflection() {
-//   if (window.matchMedia('(min-width: 1000px)').matches) {
+window.addEventListener('scroll', function hideReflection() {
+  if (window.matchMedia('(min-width: 1000px)').matches) {
     
-//     if (window.scrollY > 0) {
-//     neon.forEach(function(element) {
-//     element.classList.add('no');
-//   })
-//   } else {
-//     neon.forEach(function(element) {
-//     element.classList.remove('no');
-//     })
-//   }
-//   }
-//   })
+    if (window.scrollY > 0) {
+    neon.forEach(function(element) {
+    element.classList.add('no');
+  })
+  } else {
+    neon.forEach(function(element) {
+    element.classList.remove('no');
+    })
+  }
+  }
+  })
 /* flicker animation for the buttons */
   function flickerAnimation(element) {
     function flicker() {
