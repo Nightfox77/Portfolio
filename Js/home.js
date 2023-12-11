@@ -46,7 +46,7 @@ function handleScreenSize() {
   }
 }
 window.addEventListener('resize', handleScreenSize);
-window.addEventListener('orientationchange', handleScreenSize);
+
 
 
 /* scroll back to top function for home and up button */
