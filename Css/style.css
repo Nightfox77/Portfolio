@@ -240,7 +240,7 @@ nav {
         bottom: 0;
     }
 }
-.imageContainer:not(.hero) {
+.imageContainer:not(.hero, .frontpage) {
     overflow: hidden;
     height: 250px;
 }
@@ -305,7 +305,7 @@ nav {
     width: 100%;
     align-self: center;
 }
-.aboutwrapper img {
+.aboutwrapper img, .frontpage img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -337,4 +337,44 @@ footer {
     grid-auto-flow: column;
     place-items: center;
 }
-  
+/* front */
+.front {
+    background-color: var(--crl--black);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 2s ease;
+    
+}
+.frontpage   {
+    position: relative;
+    cursor: pointer;
+    transition: 1s all ease-in-out;
+    
+}
+.frontpage:hover {
+   
+    transform: scale(110%);
+}
+.backgroundBlur {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--crl--neonpink);
+    filter: blur(80px);
+    right: 100px;
+    top: 100px;
+    opacity: 0;
+    animation: pulsate 3s infinite;
+    animation-delay: 1s;
+}
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
+

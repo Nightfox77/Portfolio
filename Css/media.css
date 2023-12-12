@@ -48,6 +48,9 @@
     .top {
         flex-direction: row;
     }
+    .logo img {
+        width: 60px;
+    }
     .icons {
         display: none;
     }
