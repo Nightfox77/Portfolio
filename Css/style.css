@@ -315,11 +315,13 @@ nav {
     width: 100%;
     align-self: center;
 }
+.aboutwrapper img {
+    box-shadow: 0 0 2.5em var(--crl--neongreen)
+}
 .aboutwrapper img, .frontpage img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    box-shadow: 0 0 2.5em var(--crl--neongreen);
 }
 /* fotter section */
 footer {
