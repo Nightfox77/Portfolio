@@ -26,7 +26,7 @@ function showMenu() {
   burger.style.display = "none";
   closeIcon.style.display = "block";
 }
-/* what happens to hide menu */
+/* what happens  hide menu */
 function hideMenu() {
   topContainer.style.flexDirection = "row";
   overlay.style.transform = "translateX(-100%)";
@@ -97,6 +97,17 @@ window.addEventListener('scroll', function hideReflection() {
 
  
   randomFlicker();
-  
-  
-  
+
+/* slidein effect */  
+const observer = new IntersectionObserver((entries) =>{
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));  
