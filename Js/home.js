@@ -4,6 +4,8 @@ const menu = document.querySelector(".menu");
 const closeIcon = document.querySelector("#xIcon");
 const neon = document.querySelectorAll(".menu .neon-text");
 const topContainer = document.querySelector(".top");
+const main = document.querySelector("main");
+const footer = document.querySelector("footer");
 
 /* when neon button clicked => check screensize => show or not show menu */
 neon.forEach(function(element) {
@@ -25,6 +27,8 @@ function showMenu() {
   menu.style.transform = "translateX(0)";
   burger.style.display = "none";
   closeIcon.style.display = "block";
+  main.style.display = "none";
+  footer.style.display = "none";
 }
 /* what happens  hide menu */
 function hideMenu() {
@@ -33,6 +37,8 @@ function hideMenu() {
   menu.style.display = "none"; 
   burger.style.display = "block";
   closeIcon.style.display = "none";
+  main.style.display = "block";
+  footer.style.display = "grid";
 }
 
 burger.onclick = showMenu;
