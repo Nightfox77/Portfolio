@@ -202,16 +202,13 @@ nav {
     margin-top: 50px;
     gap: 50px;
 }
+.cardGrid :nth-child(2) {
+    transition-delay: 100ms;
+}
+.cardGrid :nth-child(3) {
+    transition-delay: 50ms;
+}
 
-.cardGrid:nth-child(2) {
-    transition-delay: 200ms;
-}
-.cardGrid:nth-child(3) {
-    transition-delay: 400ms;
-}
-.cardGrid:nth-child(4) {
-    transition-delay: 600ms;
-}
 .card {
     display: flex;
     flex-direction: column;
@@ -380,6 +377,7 @@ footer {
     position: relative;
     cursor: pointer;
     transition: 1s all ease-in-out;
+    -webkit-box-reflect: below 12px linear-gradient(transparent, rgba(0, 0, 0, .2));
     
 }
 .frontpage:hover {
