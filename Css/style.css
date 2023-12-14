@@ -217,7 +217,7 @@ nav {
     flex-direction: column;
     padding: 15px;
     background-color: var(--crl--darkgrey);
-    max-width: 300px;
+    max-width: 250px;
     height: max-content;
     text-align: center;
     position: relative;
@@ -261,7 +261,7 @@ nav {
 } 
 .imageContainer:not(.hero, .frontpage) {
     overflow: hidden;
-    height: 250px;
+    height: 150px;
 }
 .hero {
     display: grid;
@@ -299,10 +299,16 @@ nav {
     display: inline-block;
     margin: 0;
     padding: 0 5px;
+    color: var(--crl--grey);
 }
 
 .links-contact img, .links-portfolio img {
     width: 40px;
+}
+.links-portfolio {
+    display: grid;
+    grid-auto-flow: column;
+    
 }
 .links-portfolio img:hover, .links-contact img:hover, .up img:hover {
     transform: scale(115%);
